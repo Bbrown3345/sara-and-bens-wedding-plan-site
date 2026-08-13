@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule — Sara &amp; Ben's Wedding Plan Site</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="schedule.html">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <p class="page-kicker">Day of</p>
+  <h1 class="page-title">Schedule</h1>
+  <p class="page-intro">Filter by owner or by who's needed to see just your part of the day. Gold-marked events are key moments to watch for.</p>
+
+  <div class="legend-key">
+    <span class="legend-item"><span class="legend-swatch is-bold">Bold text</span> = responsible party (Owner)</span>
+    <span class="legend-item"><span class="legend-swatch">Plain text</span> = people needed</span>
+    <span class="legend-item"><span class="legend-key-dot"></span> Key event</span>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+      <span>Filter <span class="filter-count" id="filter-count">All</span></span>
+      <span class="chev" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="filter-panel" id="filter-panel">
+      <div class="filter-tabs">
+        <button type="button" class="filter-tab is-active" id="filter-tab-owner">By Owner</button>
+        <button type="button" class="filter-tab" id="filter-tab-people">By People Needed</button>
+      </div>
+      <div class="filter-actions">
+        <button type="button" id="filter-select-all">Select all</button>
+        <button type="button" id="filter-clear">Clear all</button>
+      </div>
+      <div id="filter-group-owner" class="filter-group is-active"></div>
+      <div id="filter-group-people" class="filter-group"></div>
+    </div>
+  </div>
+
+  <ol class="timeline" id="timeline-list"></ol>
+</main>
+
+<div id="site-footer-mount"></div>
+<script src="js/schedule-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
