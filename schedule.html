@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule — Sara &amp; Ben's Wedding Plan Site</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="schedule.html">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <p class="page-kicker">Day of</p>
+  <h1 class="page-title">Schedule</h1>
+  <p class="page-intro">Filter by who's responsible for each item to see just your part of the day.</p>
+
+  <div class="filter-bar">
+    <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+      <span>Filter by owner <span class="filter-count" id="filter-count">All</span></span>
+      <span class="chev" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="filter-panel" id="filter-panel">
+      <div class="filter-actions">
+        <button type="button" id="filter-select-all">Select all</button>
+        <button type="button" id="filter-clear">Clear all</button>
+      </div>
+      <div id="filter-options"></div>
+    </div>
+  </div>
+
+  <ol class="timeline" id="timeline-list"></ol>
+</main>
+
+<div id="site-footer-mount"></div>
+<script src="js/schedule-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
