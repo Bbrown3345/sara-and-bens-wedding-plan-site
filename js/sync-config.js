@@ -20,5 +20,5 @@
 
 var SYNC_CONFIG = {
   binId: "6a7d2712da38895dfedd651b",
-  apiKey: "$2a$10$X9g2AcdEok6ly3hetI4Z9.mb8H98D80Mr90s3vQzukQWJiI1GgEBO"
+  apiKey: "$2a$10$UkObpdYDc/lWlPWTBy5JOePdIoNx/zmBmR9dN5cw09/R4VQlhf8Ja"
 };
