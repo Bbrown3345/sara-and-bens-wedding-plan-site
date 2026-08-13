@@ -263,16 +263,12 @@
     renderTimeline();
   }
 
-  /* ---------------- Family portrait list: checkboxes, synced across devices ---------------- */
+  /* ---------------- Family portrait list: checkboxes, saved on this device ---------------- */
   function initFamilyList() {
     var container = document.getElementById("family-list");
     if (!container) return;
 
     var STORAGE_KEY = "sb-wedding-portrait-checklist";
-    var config = (typeof SYNC_CONFIG !== "undefined") ? SYNC_CONFIG : {};
-    var syncEnabled = !!(config.binId && config.apiKey);
-    var binUrl = "https://api.jsonbin.io/v3/b/" + config.binId;
-
     var state = {};
     try {
       state = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "{}");
@@ -281,7 +277,6 @@
     }
 
     var checkboxes = Array.prototype.slice.call(container.querySelectorAll("input[type=checkbox]"));
-    var statusEl = document.getElementById("sync-status");
 
     function saveLocal() {
       try {
@@ -289,113 +284,18 @@
       } catch (e) { /* storage unavailable — state still works for this session */ }
     }
 
-    function setStatus(kind) {
-      if (!statusEl) return;
-      statusEl.classList.remove("is-synced", "is-saving", "is-offline");
-      if (kind === "loading") {
-        statusEl.innerHTML = '<span class="dot"></span>Loading shared progress&hellip;';
-      } else if (kind === "saving") {
-        statusEl.classList.add("is-saving");
-        statusEl.innerHTML = '<span class="dot"></span>Saving&hellip;';
-      } else if (kind === "synced") {
-        statusEl.classList.add("is-synced");
-        statusEl.innerHTML = '<span class="dot"></span>Synced with both coordinators';
-      } else if (kind === "offline") {
-        statusEl.classList.add("is-offline");
-        statusEl.innerHTML = '<span class="dot"></span>Offline &mdash; saved on this device only';
-      } else if (kind === "local-only") {
-        statusEl.innerHTML = '<span class="dot"></span>Saved on this device only';
-      } else {
-        statusEl.innerHTML = "";
-      }
-    }
-
-    function fetchRemoteState() {
-      return fetch(binUrl + "/latest", {
-        headers: { "X-Access-Key": config.apiKey }
-      }).then(function (res) {
-        if (!res.ok) throw new Error("jsonbin GET failed: " + res.status);
-        return res.json();
-      }).then(function (data) {
-        return (data && data.record) ? data.record : {};
-      });
-    }
-
-    function putRemoteState(newState) {
-      return fetch(binUrl, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Access-Key": config.apiKey
-        },
-        body: JSON.stringify(newState)
-      }).then(function (res) {
-        if (!res.ok) throw new Error("jsonbin PUT failed: " + res.status);
-        return newState;
-      });
-    }
-
-    function applyStateToCheckboxes() {
-      checkboxes.forEach(function (cb) {
-        var shot = cb.getAttribute("data-shot");
-        var checked = !!state[shot];
-        cb.checked = checked;
-        cb.closest(".shot-row").classList.toggle("is-done", checked);
-      });
-    }
-
     checkboxes.forEach(function (cb) {
+      var shot = cb.getAttribute("data-shot");
+      var checked = !!state[shot];
+      cb.checked = checked;
+      cb.closest(".shot-row").classList.toggle("is-done", checked);
+
       cb.addEventListener("change", function () {
-        var shot = cb.getAttribute("data-shot");
-        var checked = cb.checked;
-
-        state[shot] = checked;
-        cb.closest(".shot-row").classList.toggle("is-done", checked);
+        state[shot] = cb.checked;
+        cb.closest(".shot-row").classList.toggle("is-done", cb.checked);
         saveLocal();
-
-        if (!syncEnabled) {
-          setStatus("local-only");
-          return;
-        }
-
-        setStatus("saving");
-        // Re-fetch the latest shared state first so a change made on the other
-        // coordinator's phone in the meantime doesn't get overwritten — only
-        // this one shot's value is merged in before saving back.
-        fetchRemoteState()
-          .then(function (remote) {
-            remote[shot] = checked;
-            return putRemoteState(remote);
-          })
-          .then(function (merged) {
-            state = merged;
-            saveLocal();
-            setStatus("synced");
-          })
-          .catch(function () {
-            setStatus("offline");
-          });
       });
     });
-
-    if (syncEnabled) {
-      setStatus("loading");
-      fetchRemoteState()
-        .then(function (remote) {
-          state = remote;
-          saveLocal();
-          applyStateToCheckboxes();
-          setStatus("synced");
-        })
-        .catch(function () {
-          // No connection / bin unreachable — fall back to this device's local copy
-          applyStateToCheckboxes();
-          setStatus("offline");
-        });
-    } else {
-      applyStateToCheckboxes();
-      setStatus("local-only");
-    }
   }
 
   /* ---------------- Photo gallery lightbox (used on the Location Info page) ---------------- */

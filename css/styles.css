@@ -890,66 +890,6 @@ a.phone-link:hover { text-decoration: underline; }
 }
 
 /* ---------- Family portrait list ---------- */
-.progress-bar-wrap {
-  background: var(--color-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 14px 16px;
-  margin-bottom: 22px;
-  box-shadow: var(--shadow-sm);
-}
-
-.progress-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--color-primary-darker);
-  margin-bottom: 8px;
-}
-
-.sync-status {
-  margin: 0 0 10px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--color-text-muted);
-}
-
-.sync-status .dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-border-strong);
-  flex: none;
-}
-
-.sync-status.is-synced { color: var(--color-primary-dark); }
-.sync-status.is-synced .dot { background: var(--color-primary); }
-
-.sync-status.is-saving { color: var(--color-gold); }
-.sync-status.is-saving .dot { background: var(--color-gold); }
-
-.sync-status.is-offline { color: #A15C3B; }
-.sync-status.is-offline .dot { background: #A15C3B; }
-
-.progress-track {
-  height: 8px;
-  border-radius: 999px;
-  background: var(--color-primary-light);
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: var(--color-gold);
-  border-radius: 999px;
-  width: 0%;
-  transition: width 0.25s ease;
-}
-
 .shot-list { list-style: none; margin: 0; padding: 0; }
 
 .shot-row {
