@@ -110,8 +110,13 @@ button { font-family: inherit; }
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+  .brand-text { font-size: 0.95rem; }
 }
 
 .menu-toggle {

@@ -10,10 +10,10 @@
     { href: "index.html", label: "Home" },
     { href: "schedule.html", label: "Schedule" },
     { href: "ceremony.html", label: "Ceremony Details" },
+    { href: "family.html", label: "Post-Ceremony Portraits" },
     { href: "location.html", label: "Location Info" },
     { href: "contacts.html", label: "Contacts" },
-    { href: "food.html", label: "Food & Drinks" },
-    { href: "family.html", label: "Family Portrait List" }
+    { href: "food.html", label: "Food & Drinks" }
   ];
 
   /* ---------------- Header + nav menu ---------------- */
@@ -34,7 +34,7 @@
         '<div class="header-inner">' +
           '<a class="brand" href="index.html">' +
             '<img class="brand-logo" src="images/logo.png" alt="Sara and Ben logo">' +
-            '<span class="brand-text">Plan Site</span>' +
+            '<span class="brand-text">Day-Of Plan Site</span>' +
           '</a>' +
           '<button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">' +
             '<span></span><span></span><span></span>' +
