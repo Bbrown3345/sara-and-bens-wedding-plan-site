@@ -77,7 +77,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi B (Makeup)",
-    "people": "Cheyanne P"
+    "people": "Cheyanne S"
   },
   {
     "time": "11:00",
@@ -133,7 +133,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Cheyanne P"
+    "people": "Cheyanne S"
   },
   {
     "time": "12:30",
@@ -149,7 +149,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne P, Bridesmaids (All)"
+    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "12:45",
@@ -181,7 +181,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne P, Bridesmaids (All)"
+    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "13:00",
@@ -197,7 +197,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Sara P",
-    "people": "Cheyanne P, Robin B"
+    "people": "Cheyanne S, Robin B"
   },
   {
     "time": "13:15",
@@ -213,7 +213,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne P, Bridesmaids (All)"
+    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "13:30",
@@ -260,16 +260,16 @@ var SCHEDULE_DATA = [
     "event": "Freshen Up/Go Inside",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Cait C, Emma S",
-    "people": "Sara P, Ben B, Cheyanne P, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All)"
+    "owner": "Cait S, Emma S",
+    "people": "Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All)"
   },
   {
     "time": "14:40",
     "event": "Start Wedding Party Assemble",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Cait C, Emma S",
-    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne P, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "owner": "Cait S, Emma S",
+    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
     "time": "14:45",
@@ -292,16 +292,16 @@ var SCHEDULE_DATA = [
     "event": "Bridal Party Assemble Deadline",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Cait C, Emma S",
-    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne P, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "owner": "Cait S, Emma S",
+    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
     "time": "15:05",
     "event": "Bridal Party Lined Up",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Cait C, Emma S",
-    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne P, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "owner": "Cait S, Emma S",
+    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
     "time": "15:15",
@@ -364,15 +364,15 @@ var SCHEDULE_DATA = [
     "event": "Immediate Family (Photos)",
     "key": false,
     "phase": "Cocktail hour",
-    "owner": "Brittany M (Photography), Cait C, Emma S",
-    "people": "Sara P, Ben B, Cheyanne P, Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C, Ethan"
+    "owner": "Brittany M (Photography), Cait S, Emma S",
+    "people": "Sara P, Ben B, Cheyanne S, Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C, Ethan"
   },
   {
     "time": "16:00",
     "event": "Full Wedding Party (Photos)",
     "key": false,
     "phase": "Cocktail hour",
-    "owner": "Brittany M (Photography), Cait C, Emma S",
+    "owner": "Brittany M (Photography), Cait S, Emma S",
     "people": "Sara P, Ben B, Bridesmaids (All), Groomsmen (All)"
   },
   {
@@ -429,7 +429,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike B (DJ)",
-    "people": "Cheyanne P, Casey S, Garrett S"
+    "people": "Cheyanne S, Casey S, Garrett S"
   },
   {
     "time": "18:00",
