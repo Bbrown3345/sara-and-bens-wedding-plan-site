@@ -269,7 +269,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Cait S, Emma S",
-    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn J, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
     "time": "14:45",
