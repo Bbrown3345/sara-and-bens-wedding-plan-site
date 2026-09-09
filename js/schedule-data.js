@@ -473,6 +473,14 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "18:30",
+    "event": "Photo Burst Lineup",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Brittany M (Photographer), Mike B (DJ)",
+    "people": "Sara P, Ben B, Guests"
+  },
+  {
+    "time": "18:30",
     "event": "Dancefloor (Start)",
     "key": false,
     "phase": "Reception",
