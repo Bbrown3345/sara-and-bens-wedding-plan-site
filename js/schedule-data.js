@@ -104,12 +104,20 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "12:00",
+    "time": "11:30",
     "event": "Flat/Detail (Photos)",
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittany M (Photography)",
     "people": ""
+  },
+  {
+    "time": "11:30",
+    "event": "Getting Ready (Photos)",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Brittany M (Photography)",
+    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "12:00",
@@ -149,14 +157,6 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
-  },
-  {
-    "time": "12:45",
-    "event": "Getting Ready (Photos)",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Brittany M (Photography)",
     "people": "Ben B, Casey S, Garrett S, Groomsmen (All)"
   },
   {
@@ -177,11 +177,19 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "13:00",
-    "event": "Getting Ready (Photos)",
+    "event": "Getting Ready / Dress On (Photos)",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Brittany M (Photography), Sara P",
+    "people": "Robin B, Cheyanne S, Bridesmaids (All)"
+  },
+  {
+    "time": "13:00",
+    "event": "Bridesmaids First Look (Photos)",
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
+    "people": "Sara P, Robin B, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "13:00",
@@ -192,20 +200,12 @@ var SCHEDULE_DATA = [
     "people": "Pam B, Emilia C, Veronica S"
   },
   {
-    "time": "13:00",
-    "event": "Get Dressed",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Sara P",
-    "people": "Cheyanne S, Robin B"
-  },
-  {
-    "time": "13:15",
-    "event": "Portraits (Photos)",
+    "time": "13:20",
+    "event": "First Look (Photos)",
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittany M (Photography)",
-    "people": "Ben B, Casey S, Garrett S, Groomsmen (All)"
+    "people": "Sara P, Ben B"
   },
   {
     "time": "13:30",
@@ -213,7 +213,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
+    "people": "Sara P, Ben B"
   },
   {
     "time": "13:30",
@@ -224,23 +224,31 @@ var SCHEDULE_DATA = [
     "people": "Donna P"
   },
   {
-    "time": "13:50",
-    "event": "First Look (Photos)",
-    "key": false,
-    "phase": "Pre-ceremony",
-    "owner": "Brittany M (Photography)",
-    "people": "Sara P, Ben B"
-  },
-  {
     "time": "14:00",
     "event": "Portraits (Photos)",
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittany M (Photography)",
-    "people": "Sara P, Ben B"
+    "people": "Sara P, Ben B, Cheyanne S, Casey S, Garrett S, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B"
   },
   {
-    "time": "14:15",
+    "time": "14:30",
+    "event": "Freshen Up/Go Inside",
+    "key": false,
+    "phase": "Pre-ceremony",
+    "owner": "Cait S, Emma S",
+    "people": "Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All)"
+  },
+  {
+    "time": "14:30",
+    "event": "Start Wedding Party Assemble",
+    "key": false,
+    "phase": "Pre-ceremony",
+    "owner": "Cait S, Emma S",
+    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+  },
+  {
+    "time": "14:30",
     "event": "Venue/Area (Photos)",
     "key": false,
     "phase": "Pre-ceremony",
@@ -254,22 +262,6 @@ var SCHEDULE_DATA = [
     "phase": "Pre-ceremony",
     "owner": "Brittany M (Photography)",
     "people": ""
-  },
-  {
-    "time": "14:30",
-    "event": "Freshen Up/Go Inside",
-    "key": false,
-    "phase": "Pre-ceremony",
-    "owner": "Cait S, Emma S",
-    "people": "Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All)"
-  },
-  {
-    "time": "14:40",
-    "event": "Start Wedding Party Assemble",
-    "key": false,
-    "phase": "Pre-ceremony",
-    "owner": "Cait S, Emma S",
-    "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
     "time": "14:45",
@@ -369,7 +361,7 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "16:00",
-    "event": "Full Wedding Party (Photos)",
+    "event": "Remaining Wedding Party (Photos)",
     "key": false,
     "phase": "Cocktail hour",
     "owner": "Brittany M (Photography), Cait S, Emma S",
@@ -440,6 +432,22 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
+    "time": "18:05",
+    "event": "Father/Daughter Dance",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ)",
+    "people": "Sara P, Brad P"
+  },
+  {
+    "time": "18:10",
+    "event": "Mother/Son Dance",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ)",
+    "people": "Ben B, Pam B"
+  },
+  {
     "time": "18:15",
     "event": "Dinnner Serivce (End)",
     "key": false,
@@ -448,20 +456,12 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "18:15",
-    "event": "Father/Daughter Dance",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Mike B (DJ)",
-    "people": "Sara P, Brad P"
-  },
-  {
     "time": "18:20",
-    "event": "Mother/Son Dance",
+    "event": "Sunset (Photos)",
     "key": false,
     "phase": "Reception",
-    "owner": "Mike B (DJ)",
-    "people": "Ben B, Pam B"
+    "owner": "Brittany M (Photography)",
+    "people": "Sara P, Ben B"
   },
   {
     "time": "18:25",
@@ -481,14 +481,6 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "18:45",
-    "event": "Sunset (Photos)",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Brittany M (Photography)",
-    "people": "Sara P, Ben B"
-  },
-  {
-    "time": "18:45",
     "event": "Anniversary Dance",
     "key": false,
     "phase": "Reception",
@@ -496,12 +488,20 @@ var SCHEDULE_DATA = [
     "people": "Sara P, Ben B, Guests"
   },
   {
-    "time": "20:00",
+    "time": "19:00",
     "event": "Grand Exit (Photos)",
     "key": false,
     "phase": "Reception",
     "owner": "Brittany M (Photography), Mike B (DJ)",
     "people": "Sara P, Ben B, Guests"
+  },
+  {
+    "time": "19:30",
+    "event": "Departure",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Brittany M (Photography)",
+    "people": ""
   },
   {
     "time": "20:30",
