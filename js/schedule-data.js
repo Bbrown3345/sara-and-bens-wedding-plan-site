@@ -308,7 +308,7 @@ var SCHEDULE_DATA = [
     "event": "Ceremony Start",
     "key": true,
     "phase": "Ceremony",
-    "owner": "Jason P (Pastor)",
+    "owner": "Jason P (Pastor), Lee B",
     "people": "Guests"
   },
   {
@@ -405,7 +405,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike B (DJ)",
-    "people": "Lee B"
+    "people": "Brad P"
   },
   {
     "time": "17:15",
