@@ -1,6 +1,30 @@
 var SCHEDULE_DATA = [
   {
+    "time": "07:00",
+    "event": "Arrival",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Jul L (Hair)",
+    "people": ""
+  },
+  {
+    "time": "07:15",
+    "event": "Hair",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Jul L (Hair)",
+    "people": "Jenni K"
+  },
+  {
     "time": "07:45",
+    "event": "Arrival",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Maddi B (Makeup)",
+    "people": ""
+  },
+  {
+    "time": "08:00",
     "event": "Makeup",
     "key": false,
     "phase": "Getting ready",
@@ -13,15 +37,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Logan C"
-  },
-  {
-    "time": "08:00",
-    "event": "Order Breakfast",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Casey S, Garrett S",
-    "people": ""
+    "people": "Ariah J"
   },
   {
     "time": "08:30",
@@ -37,15 +53,23 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Jenni K"
+    "people": "Logan C"
   },
   {
-    "time": "09:15",
+    "time": "09:00",
+    "event": "Coffee Run",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Megan F, Amber M",
+    "people": ""
+  },
+  {
+    "time": "09:10",
     "event": "Makeup",
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi B (Makeup)",
-    "people": "Ariah J"
+    "people": "Cheyanne S"
   },
   {
     "time": "09:30",
@@ -53,15 +77,23 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Ariah J"
+    "people": "Megan F"
   },
   {
-    "time": "10:00",
+    "time": "09:45",
     "event": "Makeup",
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi B (Makeup)",
-    "people": "Megan F"
+    "people": "Sara P"
+  },
+  {
+    "time": "10:00",
+    "event": "Arrival Deadline",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Ben B",
+    "people": "Casey S, Garrett S, Groomsmen (All)"
   },
   {
     "time": "10:15",
@@ -69,7 +101,15 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Megan F"
+    "people": "Cheyanne S"
+  },
+  {
+    "time": "10:30",
+    "event": "Arrival",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Tiffany B (Videography)",
+    "people": ""
   },
   {
     "time": "10:45",
@@ -77,7 +117,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi B (Makeup)",
-    "people": "Cheyanne S"
+    "people": "Ariah J"
   },
   {
     "time": "11:00",
@@ -88,7 +128,7 @@ var SCHEDULE_DATA = [
     "people": "Sara P"
   },
   {
-    "time": "11:30",
+    "time": "11:20",
     "event": "Makeup",
     "key": false,
     "phase": "Getting ready",
@@ -105,10 +145,10 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "11:30",
-    "event": "Flat/Detail (Photos)",
+    "event": "Flat/Detail (Photos/Videos)",
     "key": false,
     "phase": "Getting ready",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": ""
   },
   {
@@ -120,6 +160,22 @@ var SCHEDULE_DATA = [
     "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
+    "time": "11:45",
+    "event": "Sara and Jul Hair (Photos/Videos)",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Jul L (Hair), Sara P"
+  },
+  {
+    "time": "11:55",
+    "event": "Makeup",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Maddi B (Makeup)",
+    "people": "Megan F"
+  },
+  {
     "time": "12:00",
     "event": "Order lunch",
     "key": false,
@@ -128,20 +184,20 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "12:15",
-    "event": "Makeup",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Maddi B (Makeup)",
-    "people": "Sara P"
-  },
-  {
-    "time": "12:15",
+    "time": "12:00",
     "event": "Hair",
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Cheyanne S"
+    "people": "Amber M"
+  },
+  {
+    "time": "12:30",
+    "event": "Makeup Touchups",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Maddi B (Makeup)",
+    "people": "Sara P, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "12:30",
@@ -152,12 +208,28 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "12:30",
-    "event": "Getting Ready (Photos)",
+    "time": "12:15",
+    "event": "Hair",
     "key": false,
     "phase": "Getting ready",
-    "owner": "Brittney M (Photography)",
+    "owner": "Jul L (Hair)",
+    "people": "Veronica S"
+  },
+  {
+    "time": "12:35",
+    "event": "Getting Ready (Photos/Videos)",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": "Ben B, Casey S, Garrett S, Groomsmen (All)"
+  },
+  {
+    "time": "12:45",
+    "event": "Hair",
+    "key": false,
+    "phase": "Getting ready",
+    "owner": "Jul L (Hair)",
+    "people": "Emilia C"
   },
   {
     "time": "13:00",
@@ -177,18 +249,10 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "13:00",
-    "event": "Getting Ready / Dress On (Photos)",
+    "event": "Getting Ready / Dress On (Photos/Videos)",
     "key": false,
     "phase": "Getting ready",
-    "owner": "Brittney M (Photography), Sara P",
-    "people": "Robin B, Cheyanne S, Bridesmaids (All)"
-  },
-  {
-    "time": "13:00",
-    "event": "Bridesmaids First Look (Photos)",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": "Sara P, Robin B, Cheyanne S, Bridesmaids (All)"
   },
   {
@@ -197,26 +261,42 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul L (Hair)",
-    "people": "Pam B, Emilia C, Veronica S"
+    "people": "Pam B"
+  },
+  {
+    "time": "13:10",
+    "event": "Bridesmaids First Look (Photos/Videos)",
+    "key": false,
+    "phase": "Pre-ceremony",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Robin B, Cheyanne S, Bridesmaids (All)"
   },
   {
     "time": "13:20",
-    "event": "First Look (Photos)",
+    "event": "First Look (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": "Sara P, Ben B"
   },
   {
     "time": "13:30",
-    "event": "Portraits (Photos)",
+    "event": "Makeup Touchup (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittney M (Photography)",
-    "people": "Sara P, Ben B"
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Maddi B (Makeup)"
   },
   {
     "time": "13:30",
+    "event": "Bride and Groom Portraits (Photos/Videos)",
+    "key": false,
+    "phase": "Pre-ceremony",
+    "owner": "Brittany M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Ben B"
+  },
+  {
+    "time": "14:00",
     "event": "Hair",
     "key": false,
     "phase": "Pre-ceremony",
@@ -225,11 +305,11 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "14:00",
-    "event": "Portraits (Photos)",
+    "event": "Wedding Party Portraits (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittney M (Photography)",
-    "people": "Sara P, Ben B, Cheyanne S, Casey S, Garrett S, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B"
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Ben B, Cheyanne S, Casey S, Garrett S, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S"
   },
   {
     "time": "14:30",
@@ -249,18 +329,18 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "14:30",
-    "event": "Venue/Area (Photos)",
+    "event": "Venue/Area (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": ""
   },
   {
     "time": "14:30",
-    "event": "Reception Space (Photos)",
+    "event": "Reception Space (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": ""
   },
   {
@@ -288,7 +368,7 @@ var SCHEDULE_DATA = [
     "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
-    "time": "15:05",
+    "time": "15:00",
     "event": "Bridal Party Lined Up",
     "key": false,
     "phase": "Pre-ceremony",
@@ -296,7 +376,7 @@ var SCHEDULE_DATA = [
     "people": "Jason P (Pastor), Sara P, Ben B, Cheyanne S, Bridesmaids (All), Casey S, Garrett S, Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
   },
   {
-    "time": "15:15",
+    "time": "15:10",
     "event": "Arrival Window (End)",
     "key": false,
     "phase": "Pre-ceremony",
@@ -321,10 +401,10 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "15:15",
-    "event": "Ceremony (Photos)",
+    "event": "Ceremony (Photos/Videos)",
     "key": false,
     "phase": "Ceremony",
-    "owner": "Brittney M (Photography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": ""
   },
   {
@@ -353,19 +433,27 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "15:45",
-    "event": "Immediate Family (Photos)",
+    "event": "Immediate Family (Photos/Videos)",
     "key": false,
     "phase": "Cocktail hour",
-    "owner": "Brittney M (Photography), Cait S, Emma S",
+    "owner": "Brittney M (Photography), Tiffany B (Videography), Cait S, Emma S",
     "people": "Sara P, Ben B, Cheyanne S, Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C, Ethan"
   },
   {
     "time": "16:00",
-    "event": "Remaining Wedding Party (Photos)",
+    "event": "Remaining Wedding Party (Photos/Videos)",
     "key": false,
     "phase": "Cocktail hour",
-    "owner": "Brittney M (Photography), Cait S, Emma S",
+    "owner": "Brittney M (Photography), Tiffany B (Videography), Cait S, Emma S",
     "people": "Sara P, Ben B, Bridesmaids (All), Groomsmen (All)"
+  },
+  {
+    "time": "15:30",
+    "event": "Photo Burst Lineup (Optional)",
+    "key": false,
+    "phase": "Cocktail hour",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Ben B, Guests"
   },
   {
     "time": "16:55",
@@ -389,7 +477,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike B (DJ)",
-    "people": "Sara P, Ben B, Bridesmaids (All), Groomsmen (All)"
+    "people": "Sara P, Ben B, Cheyanne S, Casey C, Garrett S, Bridesmaids (All), Groomsmen (All)"
   },
   {
     "time": "17:05",
@@ -400,7 +488,7 @@ var SCHEDULE_DATA = [
     "people": "Sara P, Ben B"
   },
   {
-    "time": "17:15",
+    "time": "17:10",
     "event": "Welcome Toast/Blessing",
     "key": false,
     "phase": "Reception",
@@ -420,11 +508,43 @@ var SCHEDULE_DATA = [
     "event": "Toasts",
     "key": false,
     "phase": "Reception",
-    "owner": "Mike B (DJ)",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
     "people": "Cheyanne S, Casey S, Garrett S"
   },
   {
+    "time": "17:55",
+    "event": "Father/Daughter Dance",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Brad P"
+  },
+  {
     "time": "18:00",
+    "event": "Mother/Son Dance",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Ben B, Pam B"
+  },
+  {
+    "time": "18:05",
+    "event": "Cake Cutting",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Ben B"
+  },
+  {
+    "time": "18:15",
+    "event": "Sunset Photos/Videos (Optional)",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
+    "people": "Sara P, Ben B"
+  },
+  {
+    "time": "18:15",
     "event": "Last Call (Dinner)",
     "key": false,
     "phase": "Reception",
@@ -432,23 +552,7 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "18:05",
-    "event": "Father/Daughter Dance",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Mike B (DJ)",
-    "people": "Sara P, Brad P"
-  },
-  {
-    "time": "18:10",
-    "event": "Mother/Son Dance",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Mike B (DJ)",
-    "people": "Ben B, Pam B"
-  },
-  {
-    "time": "18:15",
+    "time": "18:35",
     "event": "Dinnner Serivce (End)",
     "key": false,
     "phase": "Reception",
@@ -456,51 +560,35 @@ var SCHEDULE_DATA = [
     "people": ""
   },
   {
-    "time": "18:20",
-    "event": "Sunset (Photos)",
+    "time": "18:35",
+    "event": "Return to Reception",
     "key": false,
     "phase": "Reception",
-    "owner": "Brittney M (Photography)",
-    "people": "Sara P, Ben B"
-  },
-  {
-    "time": "18:25",
-    "event": "Cake Cutting",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Mike B (DJ)",
-    "people": "Sara P, Ben B"
-  },
-  {
-    "time": "18:30",
-    "event": "Photo Burst Lineup",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Brittney M (Photography), Mike B (DJ)",
-    "people": "Sara P, Ben B, Guests"
-  },
-  {
-    "time": "18:30",
-    "event": "Dancefloor (Start)",
-    "key": false,
-    "phase": "Reception",
-    "owner": "Mike B (DJ)",
+    "owner": "Sara P, Ben B",
     "people": ""
   },
   {
-    "time": "18:45",
+    "time": "18:35",
     "event": "Anniversary Dance",
     "key": false,
     "phase": "Reception",
-    "owner": "Mike B (DJ)",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
     "people": "Sara P, Ben B, Guests"
   },
   {
-    "time": "19:00",
-    "event": "Grand Exit (Photos)",
+    "time": "18:40",
+    "event": "Dancefloor (Start)",
     "key": false,
     "phase": "Reception",
-    "owner": "Brittney M (Photography), Mike B (DJ)",
+    "owner": "Mike B (DJ), Brittney M (Photography)",
+    "people": ""
+  },
+  {
+    "time": "19:15",
+    "event": "Grand Exit (Photos/Videos)",
+    "key": false,
+    "phase": "Reception",
+    "owner": "Mike B (DJ), Brittney M (Photography), Tiffany B (Videography)",
     "people": "Sara P, Ben B, Guests"
   },
   {
@@ -521,7 +609,7 @@ var SCHEDULE_DATA = [
   },
   {
     "time": "20:45",
-    "event": "Bar Closes",
+    "event": "Bar Service Close / Self-Serve Start",
     "key": false,
     "phase": "Reception",
     "owner": "Mel (Bartender)",
