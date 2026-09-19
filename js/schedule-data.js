@@ -292,7 +292,7 @@ var SCHEDULE_DATA = [
     "event": "Bride and Groom Portraits (Photos/Videos)",
     "key": false,
     "phase": "Pre-ceremony",
-    "owner": "Brittany M (Photography), Tiffany B (Videography)",
+    "owner": "Brittney M (Photography), Tiffany B (Videography)",
     "people": "Sara P, Ben B"
   },
   {
@@ -477,7 +477,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike B (DJ)",
-    "people": "Sara P, Ben B, Cheyanne S, Casey C, Garrett S, Bridesmaids (All), Groomsmen (All)"
+    "people": "Sara P, Ben B, Cheyanne S, Casey S, Garrett S, Bridesmaids (All), Groomsmen (All)"
   },
   {
     "time": "17:05",
