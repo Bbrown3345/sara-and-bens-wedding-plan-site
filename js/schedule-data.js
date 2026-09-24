@@ -448,7 +448,7 @@ var SCHEDULE_DATA = [
     "people": "Sara P, Ben B, Bridesmaids (All), Groomsmen (All)"
   },
   {
-    "time": "15:30",
+    "time": "16:30",
     "event": "Photo Burst Lineup (Optional)",
     "key": false,
     "phase": "Cocktail hour",
