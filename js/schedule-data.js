@@ -448,6 +448,14 @@ var SCHEDULE_DATA = [
     "people": "Sara P, Ben B, Bridesmaids (All), Groomsmen (All)"
   },
   {
+    "time": "16:00",
+    "event": "Cake Table Set-Up",
+    "key": false,
+    "phase": "Cocktail hour",
+    "owner": "Cait S, Emma S",
+    "people": ""
+  },
+  {
     "time": "16:30",
     "event": "Photo Burst Lineup (Optional)",
     "key": false,
