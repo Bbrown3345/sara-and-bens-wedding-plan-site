@@ -37,7 +37,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Ariah"
+    "people": "Ariah J"
   },
   {
     "time": "08:30",
@@ -45,7 +45,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Jenni"
+    "people": "Jenni K"
   },
   {
     "time": "08:45",
