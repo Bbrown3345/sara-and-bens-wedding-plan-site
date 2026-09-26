@@ -21,8 +21,27 @@
     <span>This page is a placeholder to show the format — swipe the table sideways to see every column. The rows below are examples; real inventory items will replace them once finalized.</span>
   </div>
 
+  <div class="filter-bar">
+    <button class="filter-toggle" id="inv-filter-toggle" aria-expanded="false" aria-controls="inv-filter-panel">
+      <span>Filter <span class="filter-count" id="inv-filter-count">All</span></span>
+      <span class="chev" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="filter-panel" id="inv-filter-panel">
+      <div class="filter-tabs">
+        <button type="button" class="filter-tab is-active" id="inv-filter-tab-area">By Area</button>
+        <button type="button" class="filter-tab" id="inv-filter-tab-source">By Source</button>
+      </div>
+      <div class="filter-actions">
+        <button type="button" id="inv-filter-select-all">Select all</button>
+        <button type="button" id="inv-filter-clear">Clear all</button>
+      </div>
+      <div id="inv-filter-group-area" class="filter-group is-active"></div>
+      <div id="inv-filter-group-source" class="filter-group"></div>
+    </div>
+  </div>
+
   <div class="table-wrap table-wrap--wide">
-    <table>
+    <table id="inventory-table">
       <thead>
         <tr>
           <th>Area</th>
@@ -36,7 +55,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr data-area="Ceremony" data-source="Rented">
           <td>Ceremony</td>
           <td>Altar</td>
           <td>Decor</td>
@@ -46,7 +65,17 @@
           <td>&mdash;</td>
           <td class="wrap-cell">Needs 2 people to assemble on-site</td>
         </tr>
-        <tr>
+        <tr data-area="Cocktail Hour" data-source="Bringing">
+          <td>Cocktail Hour</td>
+          <td>Bar</td>
+          <td>Signage</td>
+          <td>"Welcome" sign<span class="example-tag">Example</span></td>
+          <td>1</td>
+          <td>Bringing</td>
+          <td>Bin 1 &mdash; "Signage"</td>
+          <td class="wrap-cell">Easel not included — borrow from ceremony arch stand</td>
+        </tr>
+        <tr data-area="Reception" data-source="Provided by Venue">
           <td>Reception</td>
           <td>Head table</td>
           <td>Linens</td>
@@ -56,7 +85,27 @@
           <td>&mdash;</td>
           <td class="wrap-cell">Confirm sizing with venue ahead of time</td>
         </tr>
-        <tr>
+        <tr data-area="Supplies" data-source="Bringing">
+          <td>Supplies</td>
+          <td>&mdash;</td>
+          <td>Tools</td>
+          <td>Extension cords<span class="example-tag">Example</span></td>
+          <td>3</td>
+          <td>Bringing</td>
+          <td>Bin 5 &mdash; "Supplies"</td>
+          <td class="wrap-cell">For lighting and DJ setup</td>
+        </tr>
+        <tr data-area="Groom Suite" data-source="Bringing">
+          <td>Groom Suite</td>
+          <td>Lounge</td>
+          <td>Getting-ready supplies</td>
+          <td>Cornhole set<span class="example-tag">Example</span></td>
+          <td>1</td>
+          <td>Bringing</td>
+          <td>&mdash;</td>
+          <td class="wrap-cell">For downtime before photos</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-source="Bringing">
           <td>Bridal Suite</td>
           <td>Vanity</td>
           <td>Getting-ready supplies</td>
@@ -65,6 +114,9 @@
           <td>Bringing</td>
           <td>Bin 3 &mdash; "Bridal Suite"</td>
           <td class="wrap-cell">One per bridesmaid, plus bride</td>
+        </tr>
+        <tr id="inv-empty-row" style="display:none;">
+          <td colspan="8"><p class="empty-state" style="padding: 14px 0;">No items match the selected filters.</p></td>
         </tr>
       </tbody>
     </table>

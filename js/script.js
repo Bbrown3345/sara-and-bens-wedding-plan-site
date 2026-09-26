@@ -373,11 +373,150 @@
     });
   }
 
+  /* ---------------- Inventory page: filter table rows by Area / Source ---------------- */
+  function initInventory() {
+    var toggle = document.getElementById("inv-filter-toggle");
+    var table = document.getElementById("inventory-table");
+    if (!toggle || !table) return;
+
+    var rows = Array.prototype.slice.call(table.querySelectorAll("tbody tr")).filter(function (row) {
+      return row.id !== "inv-empty-row";
+    });
+    var emptyRow = document.getElementById("inv-empty-row");
+
+    var panel = document.getElementById("inv-filter-panel");
+    var countBadge = document.getElementById("inv-filter-count");
+    var selectAllBtn = document.getElementById("inv-filter-select-all");
+    var clearBtn = document.getElementById("inv-filter-clear");
+    var tabArea = document.getElementById("inv-filter-tab-area");
+    var tabSource = document.getElementById("inv-filter-tab-source");
+    var groupArea = document.getElementById("inv-filter-group-area");
+    var groupSource = document.getElementById("inv-filter-group-source");
+
+    function uniqueValues(attr) {
+      var set = {};
+      rows.forEach(function (row) {
+        var v = row.getAttribute(attr);
+        if (v) set[v] = true;
+      });
+      return Object.keys(set).sort(function (a, b) { return a.localeCompare(b); });
+    }
+
+    var areas = uniqueValues("data-area");
+    var sources = uniqueValues("data-source");
+
+    var selectedArea = {};
+    areas.forEach(function (a) { selectedArea[a] = true; });
+    var selectedSource = {};
+    sources.forEach(function (s) { selectedSource[s] = true; });
+
+    var activeTab = "area";
+
+    function renderGroup(mount, values, selectedMap, prefix) {
+      mount.innerHTML = values.map(function (v) {
+        var id = prefix + "-" + v.replace(/[^a-z0-9]/gi, "");
+        return (
+          '<label class="filter-option" for="' + id + '">' +
+            '<input type="checkbox" id="' + id + '" data-value="' + v.replace(/"/g, "&quot;") + '" ' + (selectedMap[v] ? "checked" : "") + '>' +
+            '<span>' + v + '</span>' +
+          '</label>'
+        );
+      }).join("");
+
+      mount.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
+        cb.addEventListener("change", function () {
+          selectedMap[cb.getAttribute("data-value")] = cb.checked;
+          updateCountBadge();
+          applyFilters();
+        });
+      });
+    }
+
+    function isRestricted(values, selectedMap) {
+      var activeCount = values.filter(function (v) { return selectedMap[v]; }).length;
+      return activeCount > 0 && activeCount < values.length;
+    }
+
+    function updateCountBadge() {
+      var restricted = isRestricted(areas, selectedArea) || isRestricted(sources, selectedSource);
+      countBadge.textContent = restricted ? "Filtered" : "All";
+    }
+
+    function rowMatchesFacet(row, attr, values, selectedMap) {
+      if (!isRestricted(values, selectedMap)) return true;
+      var v = row.getAttribute(attr);
+      if (!v) return false;
+      return !!selectedMap[v];
+    }
+
+    function rowMatches(row) {
+      return rowMatchesFacet(row, "data-area", areas, selectedArea) &&
+             rowMatchesFacet(row, "data-source", sources, selectedSource);
+    }
+
+    function applyFilters() {
+      var anyVisible = false;
+      rows.forEach(function (row) {
+        var show = rowMatches(row);
+        row.style.display = show ? "" : "none";
+        if (show) anyVisible = true;
+      });
+      if (emptyRow) emptyRow.style.display = anyVisible ? "none" : "";
+    }
+
+    function switchTab(tab) {
+      activeTab = tab;
+      tabArea.classList.toggle("is-active", tab === "area");
+      tabSource.classList.toggle("is-active", tab === "source");
+      groupArea.classList.toggle("is-active", tab === "area");
+      groupSource.classList.toggle("is-active", tab === "source");
+    }
+
+    tabArea.addEventListener("click", function () { switchTab("area"); });
+    tabSource.addEventListener("click", function () { switchTab("source"); });
+
+    toggle.addEventListener("click", function () {
+      var isOpen = panel.classList.contains("is-open");
+      panel.classList.toggle("is-open", !isOpen);
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+    });
+
+    selectAllBtn.addEventListener("click", function () {
+      if (activeTab === "area") {
+        areas.forEach(function (a) { selectedArea[a] = true; });
+        renderGroup(groupArea, areas, selectedArea, "area");
+      } else {
+        sources.forEach(function (s) { selectedSource[s] = true; });
+        renderGroup(groupSource, sources, selectedSource, "source");
+      }
+      updateCountBadge();
+      applyFilters();
+    });
+
+    clearBtn.addEventListener("click", function () {
+      if (activeTab === "area") {
+        areas.forEach(function (a) { selectedArea[a] = false; });
+        renderGroup(groupArea, areas, selectedArea, "area");
+      } else {
+        sources.forEach(function (s) { selectedSource[s] = false; });
+        renderGroup(groupSource, sources, selectedSource, "source");
+      }
+      updateCountBadge();
+      applyFilters();
+    });
+
+    renderGroup(groupArea, areas, selectedArea, "area");
+    renderGroup(groupSource, sources, selectedSource, "source");
+    updateCountBadge();
+    applyFilters();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     injectHeader();
     injectFooter();
     initSchedule();
     initFamilyList();
     initGallery();
+    initInventory();
   });
 })();
