@@ -168,7 +168,9 @@ button { font-family: inherit; }
 }
 
 .site-menu.is-open {
-  max-height: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .site-menu ul {
@@ -179,12 +181,26 @@ button { font-family: inherit; }
   margin: 0 auto;
 }
 
+.site-menu .nav-section-label {
+  display: block;
+  padding: 14px 20px 6px;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.site-menu li:first-child .nav-section-label {
+  padding-top: 6px;
+}
+
 .site-menu a {
   display: block;
-  padding: 13px 20px;
+  padding: 12px 20px 12px 24px;
   color: #F2F1EA;
   text-decoration: none;
-  font-size: 1.02rem;
+  font-size: 1.0rem;
   font-weight: 500;
   border-left: 3px solid transparent;
 }
@@ -310,6 +326,34 @@ main {
   font-size: 0.95rem;
 }
 
+.hero-card p + .hero-nav-group {
+  margin-top: 22px;
+}
+
+.hero-nav-group + .hero-nav-group {
+  margin-top: 28px;
+}
+
+.hero-nav-group-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-light);
+  border: 1px solid var(--color-border-strong);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin: 0 0 14px;
+}
+
+.hero-nav-group-title .rule {
+  display: none;
+}
+
 .hero-nav-list {
   margin-top: 8px;
   display: grid;
@@ -374,7 +418,7 @@ main {
   counter-reset: item;
 }
 
-.ordered-list li {
+.ordered-list > li {
   counter-increment: item;
   display: flex;
   gap: 12px;
@@ -384,9 +428,109 @@ main {
   font-size: 0.93rem;
 }
 
-.ordered-list li:last-child { border-bottom: none; }
+.ordered-list > li:last-child { border-bottom: none; }
 
-.ordered-list li::before {
+/* Rich variant: multi-line content per item (title + personnel + description) */
+.ordered-list.is-rich > li { align-items: flex-start; }
+
+.ordered-list-title { font-weight: 600; }
+
+.ordered-list-meta {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+}
+
+.ordered-list-desc {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.92em;
+  color: var(--color-text);
+}
+
+.ordered-list-sublist {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 6px 0 0;
+  border-top: 1px dashed var(--color-border);
+}
+
+.ordered-list-sublist li {
+  padding: 2px 0;
+  font-size: 0.83rem;
+  color: var(--color-text-muted);
+  border-bottom: none;
+}
+
+.ordered-list-sublist li em {
+  font-style: italic;
+}
+
+/* Small name "chip" list — an easier-to-scan alternative to one long
+   comma-separated string of personnel/people-needed names. */
+.name-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.name-chip {
+  display: inline-block;
+  background: var(--color-primary-tint);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 0.78rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Mini-table variant — a compact two-column table nested inside a
+   rich ordered-list item (e.g. Rehearsal's arrival-time breakdown). */
+.mini-table-wrap {
+  margin-top: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  width: 100%;
+}
+
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+}
+
+.mini-table thead th {
+  background: var(--color-primary-tint);
+  color: var(--color-text-muted);
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mini-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.mini-table tr:last-child td { border-bottom: none; }
+
+.mini-table td.mini-table-time {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-align: right;
+}
+
+.ordered-list > li::before {
   content: counter(item);
   flex: none;
   width: 22px;
@@ -402,6 +546,20 @@ main {
 }
 
 /* plain rows, no counter (for food/drink lists where an Order # exists but isn't a rank) */
+/* Uppercase sub-category label used to group items within a section-body
+   (e.g. "Food" / "Drink" on Food & Drink, or a shot cluster on Photos) */
+.subgroup-label {
+  padding: 9px 16px 9px 14px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-tint);
+  border-left: 4px solid var(--color-gold);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .plain-list { list-style: none; margin: 0; padding: 0; }
 .plain-list li {
   padding: 10px 16px;
@@ -426,12 +584,55 @@ main {
   white-space: nowrap;
 }
 
+.example-tag {
+  display: inline-block;
+  background: var(--color-border-strong);
+  color: var(--color-text);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-left: 7px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.shell-notice {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--color-primary-tint);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 0.87rem;
+  color: var(--color-text-muted);
+}
+
+.shell-notice .shell-notice-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  margin-top: 6px;
+}
+
 /* ---------- Tables ---------- */
 .table-wrap {
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Tell the browser this element handles its own horizontal swipes,
+     so a swipe that starts here isn't captured by the page's vertical
+     scroll before the table gets a chance to scroll sideways. */
+  touch-action: pan-x pan-y;
   box-shadow: var(--shadow-sm);
 }
 
@@ -439,6 +640,23 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
+}
+
+/* Wide tables (many columns, e.g. Inventory): let the table set its own
+   width and scroll horizontally within .table-wrap rather than squishing. */
+.table-wrap--wide table {
+  width: auto;
+  min-width: 760px;
+}
+
+.table-wrap--wide td,
+.table-wrap--wide th {
+  white-space: nowrap;
+}
+
+.table-wrap--wide td.wrap-cell {
+  white-space: normal;
+  min-width: 160px;
 }
 
 thead th {

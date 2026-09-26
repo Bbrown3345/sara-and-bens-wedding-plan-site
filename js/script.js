@@ -7,13 +7,31 @@
   "use strict";
 
   var PAGES = [
-    { href: "index.html", label: "Home" },
-    { href: "schedule.html", label: "Schedule" },
-    { href: "ceremony.html", label: "Ceremony Details" },
-    { href: "family.html", label: "Post-Ceremony Portraits" },
-    { href: "location.html", label: "Location Info" },
-    { href: "contacts.html", label: "Contacts" },
-    { href: "food.html", label: "Food & Drinks" }
+    { href: "index.html", label: "Home" }
+  ];
+
+  var PAGE_GROUPS = [
+    {
+      label: "Day Before",
+      pages: [
+        { href: "inventory.html", label: "Inventory" },
+        { href: "schedule.html", label: "Schedule" },
+        { href: "rehearsal.html", label: "Rehearsal" },
+        { href: "dinner-menu.html", label: "Dinner Menu" }
+      ]
+    },
+    {
+      label: "Day Of",
+      pages: [
+        { href: "timeline.html", label: "Timeline" },
+        { href: "ceremony.html", label: "Ceremony" },
+        { href: "photos.html", label: "Photos" },
+        { href: "announcements.html", label: "Announcements" },
+        { href: "food.html", label: "Food & Drink" },
+        { href: "location.html", label: "Location Info" },
+        { href: "contacts.html", label: "Contacts" }
+      ]
+    }
   ];
 
   /* ---------------- Header + nav menu ---------------- */
@@ -23,18 +41,24 @@
 
     var current = document.body.getAttribute("data-page") || "index.html";
 
-    var linksHtml = PAGES.map(function (p) {
-      var active = p.href === current ? ' is-active" aria-current="page' : '"';
-      return '<li><a class="' + (p.href === current ? "is-active" : "") + '" href="' + p.href + '"' +
-        (p.href === current ? ' aria-current="page"' : "") + ">" + p.label + "</a></li>";
-    }).join("");
+    function linkItem(p) {
+      var isActive = p.href === current;
+      return '<li><a class="' + (isActive ? "is-active" : "") + '" href="' + p.href + '"' +
+        (isActive ? ' aria-current="page"' : "") + ">" + p.label + "</a></li>";
+    }
+
+    var linksHtml = PAGES.map(linkItem).join("");
+    PAGE_GROUPS.forEach(function (group) {
+      linksHtml += '<li><span class="nav-section-label">' + group.label + '</span></li>';
+      linksHtml += group.pages.map(linkItem).join("");
+    });
 
     mount.innerHTML =
       '<header class="site-header">' +
         '<div class="header-inner">' +
           '<a class="brand" href="index.html">' +
             '<img class="brand-logo" src="images/logo.png" alt="Sara and Ben logo">' +
-            '<span class="brand-text">Day-Of Plan Site</span>' +
+            '<span class="brand-text">Wedding Plan Site</span>' +
           '</a>' +
           '<button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">' +
             '<span></span><span></span><span></span>' +
