@@ -768,20 +768,29 @@ a.phone-link:hover { text-decoration: underline; }
 
 .filter-tabs {
   display: flex;
-  gap: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 10px;
 }
 
-.filter-tab {
+/* Exactly two tabs (e.g. the Timeline page) reads better as two even
+   halves; more than two (e.g. Inventory's per-column facets) size to
+   their own text and wrap onto additional rows as needed. */
+.filter-tabs:has(.filter-tab:nth-child(2):last-child) .filter-tab {
   flex: 1;
+}
+
+.filter-tab {
+  flex: 0 1 auto;
   background: var(--color-primary-tint);
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
   font-weight: 600;
   font-size: 0.78rem;
-  padding: 8px 6px;
+  padding: 8px 12px;
   border-radius: var(--radius-sm);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .filter-tab.is-active {

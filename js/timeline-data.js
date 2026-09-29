@@ -13,7 +13,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Jenni K"
+    "people": "Jenni (B2)"
   },
   {
     "time": "07:45",
@@ -29,7 +29,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Logan C"
+    "people": "Logan C (B1)"
   },
   {
     "time": "08:00",
@@ -37,7 +37,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Ariah J"
+    "people": "Ariah (B3)"
   },
   {
     "time": "08:30",
@@ -45,7 +45,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Jenni K"
+    "people": "Jenni (B2)"
   },
   {
     "time": "08:45",
@@ -53,15 +53,15 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Logan C"
+    "people": "Logan C (B1)"
   },
   {
     "time": "09:00",
     "event": "Coffee Run",
     "key": false,
     "phase": "Getting ready",
-    "owner": "Megan F, Amber M",
-    "people": ""
+    "owner": "Megan (B4), Amber (B5)",
+    "people": "Megan (B4), Amber (B5)"
   },
   {
     "time": "09:10",
@@ -69,7 +69,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Cheyanne S"
+    "people": "Cheyanne (MOH)"
   },
   {
     "time": "09:30",
@@ -77,7 +77,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Megan F"
+    "people": "Megan (B4)"
   },
   {
     "time": "09:45",
@@ -93,7 +93,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Ben",
-    "people": "Groomsmen (All)"
+    "people": "Groomsmen (All), Casey (BM 1), Garrett (BM 2)"
   },
   {
     "time": "10:15",
@@ -101,7 +101,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Cheyanne S"
+    "people": "Cheyanne (MOH)"
   },
   {
     "time": "10:30",
@@ -117,7 +117,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Ariah J"
+    "people": "Ariah (B3)"
   },
   {
     "time": "11:00",
@@ -133,7 +133,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Amber M"
+    "people": "Amber (B5)"
   },
   {
     "time": "11:30",
@@ -157,7 +157,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittney (Photography)",
-    "people": "Sara, Bridesmaids (All)"
+    "people": "Sara, Cheyanne (MOH), Bridesmaids (All)"
   },
   {
     "time": "11:45",
@@ -173,14 +173,14 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Megan F"
+    "people": "Megan (B4)"
   },
   {
     "time": "12:00",
     "event": "Order lunch",
     "key": false,
     "phase": "Getting ready",
-    "owner": "Casey S, Garrett S",
+    "owner": "Casey (BM 1), Garrett (BM 2)",
     "people": ""
   },
   {
@@ -189,7 +189,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Amber M"
+    "people": "Amber (B5)"
   },
   {
     "time": "12:30",
@@ -197,7 +197,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Maddi (Makeup)",
-    "people": "Sara, Bridesmaids (All)"
+    "people": "Sara, Bridesmaids (All), Cheyanne (MOH)"
   },
   {
     "time": "12:30",
@@ -213,7 +213,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Veronica S"
+    "people": "Veronica (FG 2)"
   },
   {
     "time": "12:35",
@@ -221,7 +221,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittney (Photography), Tiffany (Video)",
-    "people": "Ben, Groomsmen (All)"
+    "people": "Ben, Casey (BM 1), Garrett (BM 2), Groomsmen (All)"
   },
   {
     "time": "12:45",
@@ -229,7 +229,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Emilia C"
+    "people": "Emilia (FG 1)"
   },
   {
     "time": "13:00",
@@ -253,7 +253,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittney (Photography), Tiffany (Video)",
-    "people": "Sara, Cheyanne S, Robin B"
+    "people": "Robin (MOB), Cheyanne (MOH), Bridesmaids (All), Sara"
   },
   {
     "time": "13:00",
@@ -261,7 +261,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Jul (Hair)",
-    "people": "Pam B"
+    "people": "Pam (MOG)"
   },
   {
     "time": "13:10",
@@ -269,7 +269,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittney (Photography), Tiffany (Video)",
-    "people": "Sara, Robin B, Bridesmaids (All)"
+    "people": "Sara, Robin (MOB), Cheyanne (MOH), Bridesmaids (All)"
   },
   {
     "time": "13:20",
@@ -301,7 +301,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Jul (Hair)",
-    "people": "Donna P"
+    "people": "Donna (SMOB)"
   },
   {
     "time": "14:00",
@@ -309,7 +309,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Brittney (Photography), Tiffany (Video)",
-    "people": "Sara, Ben, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S"
+    "people": "Sara, Ben, Cheyanne (MOH), Casey (BM 1), Garrett (BM 2), Bridesmaids (All), Groomsmen (All), Emilia (FG 1), Veronica (FG 2), Finn (RB 1), Jett (RB 2)"
   },
   {
     "time": "14:30",
@@ -317,7 +317,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Cait/Emma (Coordinators)",
-    "people": "Sara, Ben, Bridesmaids (All), Groomsmen (All)"
+    "people": "Sara, Ben, Cheyanne (MOH), Bridesmaids (All), Casey (BM 1), Garrett (BM 2), Groomsmen (All)"
   },
   {
     "time": "14:30",
@@ -325,7 +325,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Cait/Emma (Coordinators)",
-    "people": "Jason P (Pastor), Sara, Ben, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "people": "Jason P (Pastor), Sara, Ben, Cheyanne (MOH), Bridesmaids (All), Casey (BM 1), Garrett (BM 2), Groomsmen (All), Emilia (FG 1), Veronica (FG 2), Finn (RB 1), Jett (RB 2), Robin (MOB), Edward (SFOB), Brad (FOB), Donna (SMOB), Pam (MOG), Lee (FOG), Cody, Ashlee"
   },
   {
     "time": "14:30",
@@ -365,7 +365,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Cait/Emma (Coordinators)",
-    "people": "Jason P (Pastor), Sara, Ben, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "people": "Jason P (Pastor), Sara, Ben, Cheyanne (MOH), Bridesmaids (All), Casey (BM 1), Garrett (BM 2), Groomsmen (All), Emilia (FG 1), Veronica (FG 2), Finn (RB 1), Jett (RB 2), Robin (MOB), Edward (SFOB), Brad (FOB), Donna (SMOB), Pam (MOG), Lee (FOG), Cody, Ashlee"
   },
   {
     "time": "15:00",
@@ -373,7 +373,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Pre-ceremony",
     "owner": "Cait/Emma (Coordinators)",
-    "people": "Jason P (Pastor), Sara, Ben, Bridesmaids (All), Groomsmen (All), Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C"
+    "people": "Jason P (Pastor), Sara, Ben, Cheyanne (MOH), Bridesmaids (All), Casey (BM 1), Garrett (BM 2), Groomsmen (All), Emilia (FG 1), Veronica (FG 2), Finn (RB 1), Jett (RB 2), Robin (MOB), Edward (SFOB), Brad (FOB), Donna (SMOB), Pam (MOG), Lee (FOG), Cody, Ashlee"
   },
   {
     "time": "15:10",
@@ -388,7 +388,7 @@ var SCHEDULE_DATA = [
     "event": "Ceremony Start",
     "key": true,
     "phase": "Ceremony",
-    "owner": "Jason P (Pastor), Lee B",
+    "owner": "Jason P (Pastor), Lee (FOG)",
     "people": "Guests"
   },
   {
@@ -437,7 +437,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Cocktail hour",
     "owner": "Brittney (Photography), Cait/Emma (Coordinators), Tiffany (Video)",
-    "people": "Sara, Ben, Cheyanne S, Emilia C, Veronica S, Finn C, Jett S, Robin B, Edward B, Brad P, Donna P, Pam B, Lee B, Cody S, Ashlee C, Ethan C"
+    "people": "Sara, Ben, Cheyanne (MOH), Emilia (FG 1), Veronica (FG 2), Finn (RB 1), Jett (RB 2), Robin (MOB), Edward (SFOB), Brad (FOB), Donna (SMOB), Pam (MOG), Lee (FOG), Cody, Ashlee, Ethan"
   },
   {
     "time": "16:00",
@@ -501,7 +501,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike (DJ)",
-    "people": "Brad P"
+    "people": "Brad (FOB)"
   },
   {
     "time": "17:15",
@@ -517,7 +517,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike (DJ), Brittney (Photography), Tiffany (Video)",
-    "people": "Cheyanne S, Casey S, Garrett S"
+    "people": "Cheyanne (MOH), Casey (BM 1), Garrett (BM 2)"
   },
   {
     "time": "17:55",
@@ -525,7 +525,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike (DJ), Brittney (Photography), Tiffany (Video)",
-    "people": "Sara, Brad P"
+    "people": "Sara, Brad (FOB)"
   },
   {
     "time": "18:00",
@@ -533,7 +533,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Reception",
     "owner": "Mike (DJ), Brittney (Photography), Tiffany (Video)",
-    "people": "Ben, Pam B"
+    "people": "Ben, Pam (MOG)"
   },
   {
     "time": "18:05",
