@@ -61,7 +61,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Megan F, Amber M",
-    "people": "Megan F, Amber M"
+    "people": ""
   },
   {
     "time": "09:10",
@@ -93,7 +93,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Ben",
-    "people": "Groomsmen (All), Casey S, Garrett S"
+    "people": "Groomsmen (All)"
   },
   {
     "time": "10:15",
@@ -157,7 +157,7 @@ var SCHEDULE_DATA = [
     "key": false,
     "phase": "Getting ready",
     "owner": "Brittney (Photography)",
-    "people": "Sara, Cheyanne S, Bridesmaids (All)"
+    "people": "Sara, Bridesmaids (All)"
   },
   {
     "time": "11:45",
@@ -254,14 +254,6 @@ var SCHEDULE_DATA = [
     "phase": "Getting ready",
     "owner": "Brittney (Photography), Tiffany (Video)",
     "people": "Sara, Robin B, Bridesmaids (All)"
-  },
-  {
-    "time": "13:00",
-    "event": "Hair",
-    "key": false,
-    "phase": "Getting ready",
-    "owner": "Jul (Hair)",
-    "people": "Pam B"
   },
   {
     "time": "13:10",
