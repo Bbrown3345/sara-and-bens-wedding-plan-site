@@ -373,8 +373,7 @@
     });
   }
 
-
-  /* ---------------- Inventory page: filter table rows by any column ---------------- */
+  /* ---------------- Inventory page: filter table rows by Area / Source ---------------- */
   function initInventory() {
     var toggle = document.getElementById("inv-filter-toggle");
     var table = document.getElementById("inventory-table");
@@ -389,18 +388,10 @@
     var countBadge = document.getElementById("inv-filter-count");
     var selectAllBtn = document.getElementById("inv-filter-select-all");
     var clearBtn = document.getElementById("inv-filter-clear");
-    var tabsMount = document.getElementById("inv-filter-tabs");
-    var groupsMount = document.getElementById("inv-filter-groups");
-
-    // One facet per filterable column. Add or remove entries here to
-    // change which columns can be filtered.
-    var FACETS = [
-      { attr: "data-area", key: "area", label: "Area" },
-      { attr: "data-subarea", key: "subarea", label: "Sub-Area" },
-      { attr: "data-subcategory", key: "subcategory", label: "Sub-Category" },
-      { attr: "data-source", key: "source", label: "Source" },
-      { attr: "data-bin", key: "bin", label: "Bin #" }
-    ];
+    var tabArea = document.getElementById("inv-filter-tab-area");
+    var tabSource = document.getElementById("inv-filter-tab-source");
+    var groupArea = document.getElementById("inv-filter-group-area");
+    var groupSource = document.getElementById("inv-filter-group-source");
 
     function uniqueValues(attr) {
       var set = {};
@@ -411,60 +402,56 @@
       return Object.keys(set).sort(function (a, b) { return a.localeCompare(b); });
     }
 
-    FACETS.forEach(function (facet) {
-      facet.values = uniqueValues(facet.attr);
-      facet.selected = {};
-      facet.values.forEach(function (v) { facet.selected[v] = true; });
-    });
+    var areas = uniqueValues("data-area");
+    var sources = uniqueValues("data-source");
 
-    var activeFacetKey = FACETS[0].key;
+    var selectedArea = {};
+    areas.forEach(function (a) { selectedArea[a] = true; });
+    var selectedSource = {};
+    sources.forEach(function (s) { selectedSource[s] = true; });
 
-    function facetByKey(key) {
-      for (var i = 0; i < FACETS.length; i++) {
-        if (FACETS[i].key === key) return FACETS[i];
-      }
-      return null;
-    }
+    var activeTab = "area";
 
-    function isRestricted(facet) {
-      var activeCount = facet.values.filter(function (v) { return facet.selected[v]; }).length;
-      return activeCount > 0 && activeCount < facet.values.length;
-    }
-
-    function renderGroup(facet) {
-      facet.mount.innerHTML = facet.values.map(function (v) {
-        var id = facet.key + "-" + v.replace(/[^a-z0-9]/gi, "");
+    function renderGroup(mount, values, selectedMap, prefix) {
+      mount.innerHTML = values.map(function (v) {
+        var id = prefix + "-" + v.replace(/[^a-z0-9]/gi, "");
         return (
           '<label class="filter-option" for="' + id + '">' +
-            '<input type="checkbox" id="' + id + '" data-value="' + v.replace(/"/g, "&quot;") + '" ' + (facet.selected[v] ? "checked" : "") + '>' +
+            '<input type="checkbox" id="' + id + '" data-value="' + v.replace(/"/g, "&quot;") + '" ' + (selectedMap[v] ? "checked" : "") + '>' +
             '<span>' + v + '</span>' +
           '</label>'
         );
       }).join("");
 
-      facet.mount.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
+      mount.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
         cb.addEventListener("change", function () {
-          facet.selected[cb.getAttribute("data-value")] = cb.checked;
+          selectedMap[cb.getAttribute("data-value")] = cb.checked;
           updateCountBadge();
           applyFilters();
         });
       });
     }
 
+    function isRestricted(values, selectedMap) {
+      var activeCount = values.filter(function (v) { return selectedMap[v]; }).length;
+      return activeCount > 0 && activeCount < values.length;
+    }
+
     function updateCountBadge() {
-      var restricted = FACETS.some(isRestricted);
+      var restricted = isRestricted(areas, selectedArea) || isRestricted(sources, selectedSource);
       countBadge.textContent = restricted ? "Filtered" : "All";
     }
 
-    function rowMatchesFacet(row, facet) {
-      if (!isRestricted(facet)) return true;
-      var v = row.getAttribute(facet.attr);
+    function rowMatchesFacet(row, attr, values, selectedMap) {
+      if (!isRestricted(values, selectedMap)) return true;
+      var v = row.getAttribute(attr);
       if (!v) return false;
-      return !!facet.selected[v];
+      return !!selectedMap[v];
     }
 
     function rowMatches(row) {
-      return FACETS.every(function (facet) { return rowMatchesFacet(row, facet); });
+      return rowMatchesFacet(row, "data-area", areas, selectedArea) &&
+             rowMatchesFacet(row, "data-source", sources, selectedSource);
     }
 
     function applyFilters() {
@@ -477,46 +464,16 @@
       if (emptyRow) emptyRow.style.display = anyVisible ? "none" : "";
     }
 
-    function switchTab(key) {
-      activeFacetKey = key;
-      FACETS.forEach(function (facet) {
-        facet.tabEl.classList.toggle("is-active", facet.key === key);
-        facet.groupEl.classList.toggle("is-active", facet.key === key);
-      });
+    function switchTab(tab) {
+      activeTab = tab;
+      tabArea.classList.toggle("is-active", tab === "area");
+      tabSource.classList.toggle("is-active", tab === "source");
+      groupArea.classList.toggle("is-active", tab === "area");
+      groupSource.classList.toggle("is-active", tab === "source");
     }
 
-    // Build tabs and filter groups for each facet.
-    FACETS.forEach(function (facet, index) {
-      var tabBtn = document.createElement("button");
-      tabBtn.type = "button";
-      tabBtn.className = "filter-tab" + (index === 0 ? " is-active" : "");
-      tabBtn.textContent = "By " + facet.label;
-      tabBtn.addEventListener("click", function () { switchTab(facet.key); });
-      tabsMount.appendChild(tabBtn);
-      facet.tabEl = tabBtn;
-
-      var groupDiv = document.createElement("div");
-      groupDiv.className = "filter-group" + (index === 0 ? " is-active" : "");
-      groupsMount.appendChild(groupDiv);
-      facet.groupEl = groupDiv;
-      facet.mount = groupDiv;
-    });
-
-    selectAllBtn.addEventListener("click", function () {
-      var facet = facetByKey(activeFacetKey);
-      facet.values.forEach(function (v) { facet.selected[v] = true; });
-      renderGroup(facet);
-      updateCountBadge();
-      applyFilters();
-    });
-
-    clearBtn.addEventListener("click", function () {
-      var facet = facetByKey(activeFacetKey);
-      facet.values.forEach(function (v) { facet.selected[v] = false; });
-      renderGroup(facet);
-      updateCountBadge();
-      applyFilters();
-    });
+    tabArea.addEventListener("click", function () { switchTab("area"); });
+    tabSource.addEventListener("click", function () { switchTab("source"); });
 
     toggle.addEventListener("click", function () {
       var isOpen = panel.classList.contains("is-open");
@@ -524,7 +481,32 @@
       toggle.setAttribute("aria-expanded", String(!isOpen));
     });
 
-    FACETS.forEach(renderGroup);
+    selectAllBtn.addEventListener("click", function () {
+      if (activeTab === "area") {
+        areas.forEach(function (a) { selectedArea[a] = true; });
+        renderGroup(groupArea, areas, selectedArea, "area");
+      } else {
+        sources.forEach(function (s) { selectedSource[s] = true; });
+        renderGroup(groupSource, sources, selectedSource, "source");
+      }
+      updateCountBadge();
+      applyFilters();
+    });
+
+    clearBtn.addEventListener("click", function () {
+      if (activeTab === "area") {
+        areas.forEach(function (a) { selectedArea[a] = false; });
+        renderGroup(groupArea, areas, selectedArea, "area");
+      } else {
+        sources.forEach(function (s) { selectedSource[s] = false; });
+        renderGroup(groupSource, sources, selectedSource, "source");
+      }
+      updateCountBadge();
+      applyFilters();
+    });
+
+    renderGroup(groupArea, areas, selectedArea, "area");
+    renderGroup(groupSource, sources, selectedSource, "source");
     updateCountBadge();
     applyFilters();
   }
