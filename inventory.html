@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory — Sara &amp; Ben's Wedding Plan Site</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="inventory.html">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <p class="page-kicker">Day before</p>
+  <h1 class="page-title">Inventory</h1>
+  <p class="page-intro">Decor and items being brought, rented, or provided by the venue, by area. Swipe the table sideways to see every column.</p>
+
+  <div class="filter-bar">
+    <button class="filter-toggle" id="inv-filter-toggle" aria-expanded="false" aria-controls="inv-filter-panel">
+      <span>Filter <span class="filter-count" id="inv-filter-count">All</span></span>
+      <span class="chev" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="filter-panel" id="inv-filter-panel">
+      <div class="filter-tabs" id="inv-filter-tabs"></div>
+      <div class="filter-actions">
+        <button type="button" id="inv-filter-select-all">Select all</button>
+        <button type="button" id="inv-filter-clear">Clear all</button>
+      </div>
+      <div id="inv-filter-groups"></div>
+    </div>
+  </div>
+
+  <div class="table-wrap table-wrap--wide">
+    <table id="inventory-table">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Sub-Area</th>
+          <th>Sub-Category</th>
+          <th>Item</th>
+          <th>Amount</th>
+          <th>Source</th>
+          <th>Bin #</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 1">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Bridal bouquet</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 1</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 1">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Bridesmaid bouquets</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 1</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 2">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Family corsages (mothers &amp; grandparents)</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 2</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Clothes hangers (for pics)</td>
+          <td>10</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Flower girl baskets</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Ring box - velvet</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Ring dish</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Vow book</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Gifts" data-subcategory="Gifts" data-source="Owned" data-bin="BRIDAL SUITE - BOX 4">
+          <td>Bridal Suite</td>
+          <td>Gifts</td>
+          <td>Gifts</td>
+          <td>Groomsmen gift bags</td>
+          <td>7</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 4</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Gifts" data-subcategory="Gifts" data-source="Owned" data-bin="BRIDAL SUITE - BOX 4">
+          <td>Bridal Suite</td>
+          <td>Gifts</td>
+          <td>Gifts</td>
+          <td>Ring bearer gifts</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 4</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Gifts" data-subcategory="Gifts" data-source="Owned" data-bin="BRIDAL SUITE - BOX 5">
+          <td>Bridal Suite</td>
+          <td>Gifts</td>
+          <td>Gifts</td>
+          <td>Bridesmaid gift bags</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 5</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Gifts" data-subcategory="Gifts" data-source="Owned" data-bin="BRIDAL SUITE - BOX 5">
+          <td>Bridal Suite</td>
+          <td>Gifts</td>
+          <td>Gifts</td>
+          <td>Flower girl gifts</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 5</td>
+        </tr>
+        <tr data-area="Bridal Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Floral Shop">
+          <td>Bridal Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Flower petals</td>
+          <td>50</td>
+          <td>Floral Shop</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Decor</td>
+          <td>10 ft. white drapery panel</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Structure" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Structure</td>
+          <td>10 ft. white drapery panel</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Decor</td>
+          <td>10 ft. white drapery panel</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Decor</td>
+          <td>20 ft. Sheer drapery panel</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Greenery" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Greenery</td>
+          <td>6 ft greenery garland for arch</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Greenery" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Greenery</td>
+          <td>6 ft greenery garland for arch</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Paper" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Paper</td>
+          <td>Ceremony detail cards</td>
+          <td>91</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>5</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Decor</td>
+          <td>Gold bowl for paper</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Decor</td>
+          <td>Gold lantern</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Sign" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 1">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Sign</td>
+          <td>Reserved Seating signs</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 1</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 2">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Floral</td>
+          <td>Floral arrangements - arch</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 2</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 3">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Floral</td>
+          <td>Floral arrangements - arch base</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 3</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 4">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Floral</td>
+          <td>Aisle floral arrangements</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 4</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 5">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Floral</td>
+          <td>Floral arrangement for barrels</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 5</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 5">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Decor</td>
+          <td>Lace runners</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 5</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 6">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Floral</td>
+          <td>Floral arrangement for barrels</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 6</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Decor" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 6">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Decor</td>
+          <td>Lace runners</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 6</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 7">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Floral</td>
+          <td>Floral arrangement for barrels</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 7</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Greenery" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 8">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Greenery</td>
+          <td>Wisteria garland</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 8</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Structure" data-source="Bella Vista">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Structure</td>
+          <td>Arch - Wood</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Structure" data-source="Bella Vista">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Structure</td>
+          <td>Arch - Wood</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Ceremony Arch" data-subcategory="Structure" data-source="Something Borrowed">
+          <td>Ceremony</td>
+          <td>Ceremony Arch</td>
+          <td>Structure</td>
+          <td>Arch-Double Chapel</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Seating" data-source="Bella Vista">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Seating</td>
+          <td>Chairs (white)</td>
+          <td>94</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Decor" data-source="Owned">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Decor</td>
+          <td>Easel for Welcome Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Greenery" data-source="Owned">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Greenery</td>
+          <td>Greenery for window sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Decor</td>
+          <td>Lantern - Black modern metal (s, m, l)</td>
+          <td>3</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Floral" data-source="Pam B.">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Floral</td>
+          <td>Large ferns</td>
+          <td>2</td>
+          <td>Pam B.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Sign" data-source="Owned">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Sign</td>
+          <td>Welcome Sign (Faux Stained Glass)</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Tables</td>
+          <td>Whiskey Barrel</td>
+          <td>2</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Welcome area" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Ceremony</td>
+          <td>Welcome area</td>
+          <td>Tables</td>
+          <td>Whiskey Barrel</td>
+          <td>5</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle Entrance" data-subcategory="Sign" data-source="Owned">
+          <td>Ceremony</td>
+          <td>Aisle Entrance</td>
+          <td>Sign</td>
+          <td>Window seating sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Ceremony" data-subarea="Aisle/Seating" data-subcategory="Floral" data-source="Floral Shop">
+          <td>Ceremony</td>
+          <td>Aisle/Seating</td>
+          <td>Floral</td>
+          <td>White Rose Petals</td>
+          <td>150</td>
+          <td>Floral Shop</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Beverage Station" data-subcategory="Sign" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Beverage Station</td>
+          <td>Sign</td>
+          <td>Beverage Station Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Beverage Station" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Beverage Station</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>14</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Floral arrangement for barrels</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Floral arrangement for coffee table</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Sign" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Sign</td>
+          <td>Hors d’oeuvres Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Moss brick</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Pillar candles for barrels</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Misc." data-source="Owned" data-bin="LOWER BARN - COCKTAIL AREA BOX 1">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Misc.</td>
+          <td>While You Wait Cards</td>
+          <td>24</td>
+          <td>Owned</td>
+          <td>LOWER BARN - COCKTAIL AREA BOX 1</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Beverage Station" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Cocktail Hour</td>
+          <td>Beverage Station</td>
+          <td>Dishware</td>
+          <td>10 oz disposable cups</td>
+          <td>109</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Tables</td>
+          <td>30” Rnd cocktail tables</td>
+          <td>8</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Linens</td>
+          <td>5&#x27; Round Table Cloths</td>
+          <td>3</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Tables</td>
+          <td>5&#x27; Round Tables</td>
+          <td>3</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Bar Area" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Bar Area</td>
+          <td>Tables</td>
+          <td>6&#x27; Rectangle table</td>
+          <td>2</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Beverage Station" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Beverage Station</td>
+          <td>Tables</td>
+          <td>6&#x27; Rectangle table</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Tables</td>
+          <td>6&#x27; Rectangle table</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Bar Area" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>Bar Area</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>2</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Beverage Station" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>Beverage Station</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="DJ Photobooth" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>DJ Photobooth</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Area Rug</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Seating" data-source="Something Borrowed">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Seating</td>
+          <td>Chair - Victorian-Sage (Seating area)</td>
+          <td>2</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Seating" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Seating</td>
+          <td>Chairs (wood)</td>
+          <td>18</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Linens</td>
+          <td>Cocktail tablecloths</td>
+          <td>8</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Tables" data-source="Something Borrowed">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Tables</td>
+          <td>Coffee Table</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Seating" data-source="Something Borrowed">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Seating</td>
+          <td>Couch - Seraphina (Seating area)</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Dishware</td>
+          <td>Cutlery</td>
+          <td>109</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Greenery backdrop</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Dishware</td>
+          <td>Napkins - cocktail (paper)</td>
+          <td>109</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Food Station" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Cocktail Hour</td>
+          <td>Food Station</td>
+          <td>Dishware</td>
+          <td>Plates (appetizer)</td>
+          <td>109</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Pam B.">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Throw pillows</td>
+          <td>2</td>
+          <td>Pam B.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Tables</td>
+          <td>Whiskey Barrel</td>
+          <td>3</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Decor for Food/Bev Tables</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Cocktail Hour" data-subarea="Lounge" data-subcategory="Decor" data-source="Owned">
+          <td>Cocktail Hour</td>
+          <td>Lounge</td>
+          <td>Decor</td>
+          <td>Decor for Tables</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 2">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Family boutonneires (dads and grandparents)</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 2</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 2">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Groom boutonniere</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 2</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 2">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Groomsmen boutonnieres</td>
+          <td>7</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 2</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Floral" data-source="Owned" data-bin="BRIDAL SUITE - BOX 2">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Floral</td>
+          <td>Ring bearer boutonneire</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 2</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Ring box - glass</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Groom Suite" data-subarea="Accessory" data-subcategory="Misc." data-source="Owned" data-bin="BRIDAL SUITE - BOX 3">
+          <td>Groom Suite</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Vow book</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>BRIDAL SUITE - BOX 3</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Bar Area" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 4">
+          <td>Reception</td>
+          <td>Bar Area</td>
+          <td>Floral</td>
+          <td>Arrangements from ceremony aisle</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 4</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Floral" data-source="Owned" data-bin="CEREMONY - WELCOME BOX 4">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Floral</td>
+          <td>Floral arrangement (from ceremony)</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>CEREMONY - WELCOME BOX 4</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Party Supplies" data-subcategory="Misc." data-source="Owned" data-bin="Large Basket">
+          <td>Reception</td>
+          <td>Party Supplies</td>
+          <td>Misc.</td>
+          <td>Foam light sticks</td>
+          <td>100</td>
+          <td>Owned</td>
+          <td>Large Basket</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Tables</td>
+          <td>24”x48” rectangle table</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Tables</td>
+          <td>24”x48” rectangle table</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Linens</td>
+          <td>24”x48” rectangle table cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Linens</td>
+          <td>24”x48” rectangle table cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Deck" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Deck</td>
+          <td>Tables</td>
+          <td>30” Rnd cocktail tables</td>
+          <td>2</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Linens</td>
+          <td>5&#x27; Round Table Cloths</td>
+          <td>15</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Tables</td>
+          <td>5&#x27; Round Tables</td>
+          <td>15</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="General decor" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>General decor</td>
+          <td>Decor</td>
+          <td>5ftx40ft white drapes</td>
+          <td>6</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Tables</td>
+          <td>6&#x27; Rectangle table</td>
+          <td>3</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Tables" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Tables</td>
+          <td>6&#x27; Rectangle table</td>
+          <td>1</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>3</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="DJ Table" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>DJ Table</td>
+          <td>Linens</td>
+          <td>6&#x27; Rectangle Table Cloth</td>
+          <td>1</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Bar Area" data-subcategory="Decor" data-source="Owned">
+          <td>Reception</td>
+          <td>Bar Area</td>
+          <td>Decor</td>
+          <td>Antique gold mirror</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Area Rug</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Decor</td>
+          <td>Cake stand-Cast Iron black</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Seating" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Seating</td>
+          <td>Chair-Cream Dining - Without Arms (Sweetheart)</td>
+          <td>2</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Seating" data-source="Bella Vista">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Seating</td>
+          <td>Chairs (wood)</td>
+          <td>108</td>
+          <td>Bella Vista</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Dishware" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Dishware</td>
+          <td>Charger-solid gold beaded</td>
+          <td>110</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Deck" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Deck</td>
+          <td>Linens</td>
+          <td>Cocktail tablecloths</td>
+          <td>2</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Decor</td>
+          <td>Cream Ladder Shelf</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Decor" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Decor</td>
+          <td>Cupcake Stand-Wooden Tiered</td>
+          <td>2</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Dishware</td>
+          <td>Cutlery</td>
+          <td>110</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Flameless taper candles</td>
+          <td>32</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Misc." data-source="Owned">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Misc.</td>
+          <td>Guestbook Chair</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Tables" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Tables</td>
+          <td>Kidney table for phone</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Mini brown bud vase</td>
+          <td>16</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Mixed brass candlesticks</td>
+          <td>32</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Linens" data-source="Jefferson&#x27;s Rentals">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Linens</td>
+          <td>Napkins (cloth)</td>
+          <td>110</td>
+          <td>Jefferson&#x27;s Rentals</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Dishware</td>
+          <td>Plates (dessert)</td>
+          <td>110</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Dishware</td>
+          <td>Plates (dinner)</td>
+          <td>110</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Dishware" data-source="Leiters&#x27; Fine Catering Inc.">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Dishware</td>
+          <td>Plates (salad)</td>
+          <td>110</td>
+          <td>Leiters&#x27; Fine Catering Inc.</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Round wood slab</td>
+          <td>16</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="General decor" data-subcategory="Sign" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>General decor</td>
+          <td>Sign</td>
+          <td>Seating Chart (frame, moss and paper)</td>
+          <td>1</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Dishware" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Dishware</td>
+          <td>Vintage water glasses</td>
+          <td>110</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Something Borrowed">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Votive-brown hobnail (Bumpy brown glasses)</td>
+          <td>48</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Party Supplies" data-subcategory="Misc." data-source="Owned" data-bin="Small Basket">
+          <td>Reception</td>
+          <td>Party Supplies</td>
+          <td>Misc.</td>
+          <td>Send-off items light/Ribbon sticks</td>
+          <td>100</td>
+          <td>Owned</td>
+          <td>Small Basket</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Cheesecloth runner</td>
+          <td>15</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Moss</td>
+          <td>16</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Potted Fern/Plant</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Table Number stands</td>
+          <td>15</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Table Numbers</td>
+          <td>15</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Misc." data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Misc.</td>
+          <td>Thank you notes</td>
+          <td>110</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Vase for Bridal Bouquet</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 1">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Wood Plant Riser</td>
+          <td>15</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 2">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Mini Floral Bouquet</td>
+          <td>15</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Greenery" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 2">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Greenery</td>
+          <td>Table greenery</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dining tables" data-subcategory="Centerpieces" data-source="Owned" data-bin="UPPER BARN - CENTERPIECE BOX 2">
+          <td>Reception</td>
+          <td>Dining tables</td>
+          <td>Centerpieces</td>
+          <td>Potted plant</td>
+          <td>13</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CENTERPIECE BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="General decor" data-subcategory="Greenery" data-source="Owned" data-bin="UPPER BARN - CHANDELIER BOX 1">
+          <td>Reception</td>
+          <td>General decor</td>
+          <td>Greenery</td>
+          <td>Greenery for Chandeliers (5 ft)</td>
+          <td>6</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CHANDELIER BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="General decor" data-subcategory="Greenery" data-source="Owned" data-bin="UPPER BARN - CHANDELIER BOX 2">
+          <td>Reception</td>
+          <td>General decor</td>
+          <td>Greenery</td>
+          <td>Greenery for Chandeliers (4 ft)</td>
+          <td>5</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CHANDELIER BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="General decor" data-subcategory="Greenery" data-source="Owned" data-bin="UPPER BARN - CHANDELIER BOX 3">
+          <td>Reception</td>
+          <td>General decor</td>
+          <td>Greenery</td>
+          <td>Greenery for Chandeliers (4 ft)</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>UPPER BARN - CHANDELIER BOX 3</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Boxes of fairy lights</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Bulletin board frame</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Deck" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Deck</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Gold bowl trays</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Greenery</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Deck" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Deck</td>
+          <td>Decor</td>
+          <td>Lace runners</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Mini potted plants</td>
+          <td>12</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Pillar candles</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Potted plant</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Tealight candle holders</td>
+          <td>24</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Tealight candles</td>
+          <td>48</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Water station decor</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Wood rounds</td>
+          <td>10</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Extra" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - EXTRA DECOR BOX 2">
+          <td>Reception</td>
+          <td>Extra</td>
+          <td>Decor</td>
+          <td>Hanging plants</td>
+          <td>7</td>
+          <td>Owned</td>
+          <td>UPPER BARN - EXTRA DECOR BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Decor</td>
+          <td>Candle</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Candles</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Candles</td>
+          <td>5</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Candles</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Decor</td>
+          <td>Candles</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Doily</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Engagement Photo Framed Prints</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Frame Stand</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Framed Note (Gram)</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Grandparent Framed Prints</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - MEMORY SHELF BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Invitation Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - MEMORY SHELF BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Bar Area" data-subcategory="Sign" data-source="Mixing with Mel" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Bar Area</td>
+          <td>Sign</td>
+          <td>Bar Menu Sign</td>
+          <td>1</td>
+          <td>Mixing with Mel</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Sign</td>
+          <td>Beverage Station Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Dishware" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Dishware</td>
+          <td>Cake knife/server</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Decor</td>
+          <td>Card box</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Decor</td>
+          <td>Cheesecloth runner</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Sign</td>
+          <td>Cupcake flavor sign</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Decor</td>
+          <td>Doily</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Decor</td>
+          <td>Eucalyptus &amp; Doily (for under phone)</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Decor</td>
+          <td>Gift/Card Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Misc." data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Misc.</td>
+          <td>Guest book phone</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Sign</td>
+          <td>Guestbook Record Sleeve</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Sign</td>
+          <td>Guestbook Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Sign</td>
+          <td>Markers and tray</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Sign</td>
+          <td>Menu sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Sign</td>
+          <td>Phone Guestbook Instructions</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Bar Area" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Bar Area</td>
+          <td>Sign</td>
+          <td>Sign Stand</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Buffet Tables" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Buffet Tables</td>
+          <td>Sign</td>
+          <td>Sign Stand</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Sign" data-source="Owned" data-bin="UPPER BARN - SIGNS AND DECOR BOX 1">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Sign</td>
+          <td>Sign Stand</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SIGNS AND DECOR BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 1">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Backdrop greenery (bunches)</td>
+          <td>5</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 1">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Fairy light strands (10 ft)</td>
+          <td>10</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 1">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Neon Sign</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 1</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 2">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Backdrop greenery (bunches)</td>
+          <td>5</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 2">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Backdrop greenery (double garland)</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 2</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Owned" data-bin="UPPER BARN - SWEETHEART BACKDROP BOX 3">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>10 ft. white drapery panel</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>UPPER BARN - SWEETHEART BACKDROP BOX 3</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Decor" data-source="Robin">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Decor</td>
+          <td>Backdrop stand</td>
+          <td>1</td>
+          <td>Robin</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Deck" data-subcategory="Decor" data-source="Owned">
+          <td>Reception</td>
+          <td>Deck</td>
+          <td>Decor</td>
+          <td>Edison bulb / lights</td>
+          <td>3</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Sweetheart Table" data-subcategory="Misc." data-source="Owned">
+          <td>Reception</td>
+          <td>Sweetheart Table</td>
+          <td>Misc.</td>
+          <td>Extension cord</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Floral" data-source="Owned">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Floral</td>
+          <td>Floral arrangements</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Guestbook table" data-subcategory="Decor" data-source="Owned">
+          <td>Reception</td>
+          <td>Guestbook table</td>
+          <td>Decor</td>
+          <td>General Decor</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Gift Table" data-subcategory="Decor" data-source="Owned">
+          <td>Reception</td>
+          <td>Gift Table</td>
+          <td>Decor</td>
+          <td>Greenery for Card Table</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Dessert Table" data-subcategory="Greenery" data-source="Owned">
+          <td>Reception</td>
+          <td>Dessert Table</td>
+          <td>Greenery</td>
+          <td>Greenery for Dessert Table</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Reception" data-subarea="Memory Shelf" data-subcategory="Greenery" data-source="Owned">
+          <td>Reception</td>
+          <td>Memory Shelf</td>
+          <td>Greenery</td>
+          <td>Greenery?</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Box cutter</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Glue dots</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Hammer</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Markers/Pens</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Mounting putty</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Scissors</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Staple gun</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>String</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Tape (Various)</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Velcrow straps</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Wire</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned" data-bin="GENERAL SUPPLIES AND TOOLS - BOX 1">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Wire cutters</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>GENERAL SUPPLIES AND TOOLS - BOX 1</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Accessory" data-subcategory="Misc." data-source="Something Borrowed">
+          <td>Supplies</td>
+          <td>Accessory</td>
+          <td>Misc.</td>
+          <td>Umbrella-clear</td>
+          <td>13</td>
+          <td>Something Borrowed</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Batteries</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Technology" data-subcategory="Misc." data-source="Owned">
+          <td>Supplies</td>
+          <td>Technology</td>
+          <td>Misc.</td>
+          <td>Cam corder</td>
+          <td>2</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Extension cords, power strips</td>
+          <td>4</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Fishing line</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Dishware" data-source="Owned">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Dishware</td>
+          <td>To-go/leftover boxes or containers</td>
+          <td>&mdash;</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr data-area="Supplies" data-subarea="Supplies" data-subcategory="Misc." data-source="Owned">
+          <td>Supplies</td>
+          <td>Supplies</td>
+          <td>Misc.</td>
+          <td>Zip ties contianer</td>
+          <td>1</td>
+          <td>Owned</td>
+          <td>&mdash;</td>
+        </tr>        <tr id="inv-empty-row" style="display:none;">
+          <td colspan="7"><p class="empty-state" style="padding: 14px 0;">No items match the selected filters.</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<div id="site-footer-mount"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
